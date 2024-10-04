@@ -59,22 +59,24 @@ $(document).ready(function() {
   // Initially set to Portuguese
   switchLanguage('pt');
 
-  // Função para copiar o email da Chave PIX
+  // Oculta as mensagens de sucesso ao carregar a página
+  $('#copy-success, #copy-success-copy-paste, #copy-success-paypal').hide();
+
   $('#copy-button').on('click', function() {
-    var pixEmail = $('#pix-email').text();  // Obtém o email a ser copiado
+    console.log('Copiando Chave PIX');
+    var pixEmail = $('#pix-email').text();
     copyToClipboard(pixEmail, 'copy-success');
   });
 
-  // Função para copiar o código do PIX Copia e Cola
   $('#copy-button-copy-paste').on('click', function() {
-    var pixCopyPaste =
-        $('#pix-copy-paste').text();  // Obtém o código do PIX Copia e Cola
+    console.log('Copiando PIX Copia e Cola');
+    var pixCopyPaste = $('#pix-copy-paste').text();
     copyToClipboard(pixCopyPaste, 'copy-success-copy-paste');
   });
 
-  // Função para copiar o email do PayPal
   $('#copy-button-paypal').on('click', function() {
-    var paypalEmail = $('#paypal-email').text();  // Obtém o email do PayPal
+    console.log('Copiando PayPal Email');
+    var paypalEmail = $('#paypal-email').text();
     copyToClipboard(paypalEmail, 'copy-success-paypal');
   });
 
@@ -85,10 +87,7 @@ $(document).ready(function() {
       navigator.clipboard.writeText(text)
           .then(function() {
             // Exibe mensagem de sucesso
-            document.getElementById(successElementId).style.display = 'block';
-            setTimeout(function() {
-              document.getElementById(successElementId).style.display = 'none';
-            }, 2000);
+            $('#' + successElementId).fadeIn().delay(2000).fadeOut();
           })
           .catch(function(error) {
             console.error('Falha ao copiar:', error);
@@ -104,10 +103,7 @@ $(document).ready(function() {
       document.body.removeChild(tempInput);
 
       // Exibe mensagem de sucesso
-      document.getElementById(successElementId).style.display = 'block';
-      setTimeout(function() {
-        document.getElementById(successElementId).style.display = 'none';
-      }, 2000);
+      $('#' + successElementId).fadeIn().delay(2000).fadeOut();
     }
   }
 
