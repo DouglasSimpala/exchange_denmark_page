@@ -403,7 +403,7 @@
                                             felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra
                                             nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate
                                             sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio.
-                                            Urna duis convallis convallis tellus id interdum velit.v
+                                            Urna duis convallis convallis tellus id interdum velit.
                                         </p>
                                     </div>
                                     <div class="col-md-6">
@@ -951,7 +951,8 @@
         </section>
 
         <!-- Skill Section -->
-        <section id="skill" class="section" data-scroll-index="4">
+
+        <section id="donate" class="section" data-scroll-index="4">
             <div class="container">
                 <div class="row gy-5 align-items-center">
                     <div class="about-text">
@@ -961,198 +962,185 @@
                                 <span class="lang-pt">Como Doar</span>
                             </h3>
                         </div>
-                        <div class="row gy-4">
+                        <div class="row gy-4 donation-row">
                             <!-- Primeira linha -->
-                            <div class="col-md-4">
-                                <div class="feature-box bg-1">
-                                    <div class="icon"><img src="assets/img/pix.png" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-1 text-center">
                                     <div class="content">
                                         <h5 class="text-light">
                                             <span class="lang-en">PIX QRCODE</span>
                                             <span class="lang-pt">PIX QRCODE</span>
                                         </h5>
-                                        <p class="text-light">
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                        <div class="icon">
+                                            <img src="assets/img/pix.png" alt="PIX QRCODE" class="qr-code-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-2 text-center">
+                                    <div class="content">
+                                        <h5>
+                                            <span class="lang-en">PIX Key</span>
+                                            <span class="lang-pt">Chave PIX</span>
+                                        </h5>
+                                        <p id="pix-email">
+                                            arthurnointercambio@gmail.com
+                                        </p>
+                                        <button id="copy-button" class="btn btn-primary"
+                                            onclick="copyToClipboard('arthurnointercambio@gmail.com')">
+                                            <span class="lang-en">Copy Key</span>
+                                            <span class="lang-pt">Copiar Chave</span>
+                                        </button>
+                                        <p id="copy-success">
+                                            <span class="lang-en">Key copied!</span>
+                                            <span class="lang-pt">Chave copiada!</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="feature-box bg-2">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-3 text-center">
                                     <div class="content">
                                         <h5>
-                                            <span class="lang-en">PIX KEY</span>
-                                            <span class="lang-pt">CHAVE PIX</span>
+                                            <span class="lang-en">PIX Copy and Paste</span>
+                                            <span class="lang-pt">PIX Copia e Cola</span>
                                         </h5>
                                         <p>
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                            <span class="lang-en">Use the button below to copy the code</span>
+                                            <span class="lang-pt">Use o botão abaixo para copiar o código</span>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-box bg-3">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
-                                    <div class="content">
-                                        <h5>
-                                            <span class="lang-en">COPY AND PAST PIX</span>
-                                            <span class="lang-pt">PIX COPIA E COLA</span>
-                                        </h5>
-                                        <p>
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                        <p id="pix-copy-paste" style="display:none;">
+                                            00020126580014br.gov.bcb.pix0129arthurnointercambio@gmail.com0203Pix5204000053039865802BR5925ARTHUR
+                                            MARTINS DE SOUZA B6009SAO PAULO62150511intercambio6304BE35
+                                        </p>
+                                        <button id="copy-button-copy-paste" class="btn btn-primary">
+                                            <span class="lang-en">Copy Key</span>
+                                            <span class="lang-pt">Copiar Chave</span>
+                                        </button>
+                                        <p id="copy-success-copy-paste" style="display:none;">
+                                            <span class="lang-en">Key copied!</span>
+                                            <span class="lang-pt">Chave copiada!</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Segunda linha -->
-                            <div class="col-md-4">
-                                <div class="feature-box bg-4">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-4 text-center">
                                     <div class="content">
                                         <h5 class="text-light">
-                                            <span class="lang-en">WISE EURO</span>
-                                            <span class="lang-pt">WISE EURO</span>
+                                            <span class="lang-en">WISE QRCODE</span>
+                                            <span class="lang-pt">WISE QRCODE</span>
                                         </h5>
-                                        <p class="text-light">
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                        </p>
+                                        <div class="icon">
+                                            <img src="assets/img/wise_qr.jpeg" alt="WISE QRCODE" class="qr-code-img">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="feature-box bg-5">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-5 text-center">
                                     <div class="content">
                                         <h5>
-                                            <span class="lang-en">WISE DOLAR</span>
-                                            <span class="lang-pt">WISE DOLAR</span>
+                                            <span class="lang-en">WISE ACCOUNT</span>
+                                            <span class="lang-pt">CONTA WISE</span>
                                         </h5>
                                         <p>
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                            <span class="lang-en">WiseTag: @arthurmartinsdesouzab</span>
+                                            <span class="lang-pt">WiseTag: @arthurmartinsdesouzab</span>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-box bg-6">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
-                                    <div class="content">
-                                        <h5>
-                                            <span class="lang-en">NOMAND</span>
-                                            <span class="lang-pt">NOMAND</span>
-                                        </h5>
                                         <p>
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                            <span class="lang-en">Visit my Wise account:</span>
+                                            <span class="lang-pt">Visite minha conta Wise:</span>
+                                            <a href="https://wise.com/pay/me/arthurmartinsdesouzab"
+                                                target="_blank">Wise</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Terceira linha adicional -->
-                            <div class="col-md-4">
-                                <div class="feature-box bg-4">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-6">
+                                    <div class="content">
+                                        <h5>
+                                            <span class="lang-en">Nomad Bank Account</span>
+                                            <span class="lang-pt">Conta Nomad</span>
+                                        </h5>
+                                        <p>
+                                            <strong><span class="lang-en">Account Holder:</span><span
+                                                    class="lang-pt">Titular:</span></strong>
+                                            ARTHUR MARTINS DE SOUZA BARRETO<br>
+                                            <strong><span class="lang-en">Account Number:</span><span
+                                                    class="lang-pt">Conta:</span></strong>
+                                            652116314012
+                                        </p>
                                     </div>
+                                </div>
+                            </div>
+
+                            <!-- Terceira linha -->
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-4">
                                     <div class="content">
                                         <h5 class="text-light">
                                             <span class="lang-en">Miles</span>
                                             <span class="lang-pt">Milhas</span>
                                         </h5>
                                         <p class="text-light">
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                            <span class="lang-en">
+                                                Donating miles is also a way to help. For more information, please get
+                                                in touch through the contact section.
+                                            </span>
+                                            <span class="lang-pt">
+                                                Doar milhas também é uma forma de ajudar. Para mais informações, entre
+                                                em contato através da seção de contato.
+                                            </span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="feature-box bg-5">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
+
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-5">
                                     <div class="content">
                                         <h5>
-                                            <span class="lang-en">PAYPAL</span>
-                                            <span class="lang-pt">PAYPAL</span>
+                                            <span class="lang-en">Paypal</span>
+                                            <span class="lang-pt">Paypal</span>
                                         </h5>
-                                        <p>
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                        <p id="paypal-email">
+                                            arthurbarreto2905@gmail.com
+                                        </p>
+                                        <button id="copy-button-paypal" class="btn btn-primary">
+                                            <span class="lang-en">Copy Email</span>
+                                            <span class="lang-pt">Copiar Email</span>
+                                        </button>
+                                        <p id="copy-success-paypal">
+                                            <span class="lang-en">Email copied!</span>
+                                            <span class="lang-pt">Email copiado!</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="feature-box bg-6">
-                                    <div class="icon"><img src="assets/img/eu.jpg" alt="Medalha de Ouro"
-                                            class="medal-img">
-                                    </div>
+
+                            <div class="col-md-4 donation-col">
+                                <div class="donation-box bg-6">
                                     <div class="content">
                                         <h5>
                                             <span class="lang-en">TED</span>
                                             <span class="lang-pt">TED</span>
                                         </h5>
-                                        <p>
-                                            <span class="lang-en">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                            <span class="lang-pt">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit, sed
-                                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                                        </p>
+                                        <ul>
+                                            <li>
+                                                <span>Banco Itaú</span>
+                                                <span class="bank-details">Agência: 2799 | Conta: 06771-1</span>
+                                            </li>
+                                            <li>
+                                                <span>Banco do Brasil</span>
+                                                <span class="bank-details">Agência: 1526-1 | Conta: 29600-7</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -1160,24 +1148,25 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Parágrafo fora da estrutura -->
-            <div class="container mt-5">
-                <p>
-                    <span class="lang-en">
-                        Thank you for considering donating! Each contribution helps make this exchange program a reality
-                        and
-                        brings me closer to achieving my academic and professional goals. Below is a graphical
-                        representation of how your donations impact my journey.
-                    </span>
-                    <span class="lang-pt">
-                        Obrigado por considerar doar! Cada contribuição ajuda a tornar este programa de intercâmbio uma
-                        realidade e me aproxima de alcançar meus objetivos acadêmicos e profissionais. Abaixo está uma
-                        representação gráfica de como suas doações impactam minha jornada.
-                    </span>
+        <!-- Parágrafo fora da estrutura -->
+        <div class="container mt-5">
+            <p>
+                <span class="lang-en">
+                    Thank you for considering donating! Each contribution helps make this exchange program a reality
+                    and
+                    brings me closer to achieving my academic and professional goals. Below is a graphical
+                    representation of how your donations impact my journey.
+                </span>
+                <span class="lang-pt">
+                    Obrigado por considerar doar! Cada contribuição ajuda a tornar este programa de intercâmbio uma
+                    realidade e me aproxima de alcançar meus objetivos acadêmicos e profissionais. Abaixo está uma
+                    representação gráfica de como suas doações impactam minha jornada.
+                </span>
 
-                </p>
-            </div>
+            </p>
+        </div>
 
         </section>
 
