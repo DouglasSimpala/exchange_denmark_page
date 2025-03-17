@@ -21,3 +21,8 @@ To view the site, simply open the `index.html` file in your browser.
 Special thanks to **Code Jungle** for their tutorial, which greatly inspired the design and structure of this site. Check out their tutorial [here](https://youtu.be/cZj0j7rCcek).
 
 Thank you for your support!
+
+## Tutorial for students who want to create a similar site
+
+- [How to start](https://youtu.be/HhV5jeboMi4)
+- [How to configure the domain](https://youtu.be/m1WEqLE4BRQ)
